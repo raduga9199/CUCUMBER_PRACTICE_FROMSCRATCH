@@ -6,7 +6,11 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+
+
+
 public class LoginPage {
+
     @FindBy(name = "email")
     private WebElement username;
 
@@ -46,5 +50,6 @@ public class LoginPage {
         BrowserUtils.waitForPageToLoad(10);
 
     }
+
 
 }
