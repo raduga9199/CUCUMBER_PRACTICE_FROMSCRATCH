@@ -19,9 +19,30 @@ public class LoginPage {
         BrowserUtils.waitForPageToLoad(10);
     }
 
-    public void login() {
-        username.sendKeys(ConfigurationReader.getProperty("store_manager"));
-        password.sendKeys(ConfigurationReader.getProperty("password"), Keys.ENTER);
+    public void loginAsUsernameStudentElene() {
+        username.sendKeys(ConfigurationReader.getProperty("usernameStudentElene"));
+        password.sendKeys(ConfigurationReader.getProperty("passwordStudentElene"), Keys.ENTER);
+        BrowserUtils.waitForPageToLoad(10);
+
+    }
+
+    public void loginAsUsernameStudentNonna() {
+        username.sendKeys(ConfigurationReader.getProperty("usernameStudentNonna"));
+        password.sendKeys(ConfigurationReader.getProperty("passwordStudentNonna"), Keys.ENTER);
+        BrowserUtils.waitForPageToLoad(10);
+
+    }
+
+    public void loginAsUsernameTeamLead() {
+        username.sendKeys(ConfigurationReader.getProperty("usernameTeamLead"));
+        password.sendKeys(ConfigurationReader.getProperty("passwordTeamLead"), Keys.ENTER);
+        BrowserUtils.waitForPageToLoad(10);
+
+    }
+
+    public void loginAsUsernameTeacher() {
+        username.sendKeys(ConfigurationReader.getProperty("usernameTeacher"));
+        password.sendKeys(ConfigurationReader.getProperty("passwordTeacher"), Keys.ENTER);
         BrowserUtils.waitForPageToLoad(10);
 
     }
