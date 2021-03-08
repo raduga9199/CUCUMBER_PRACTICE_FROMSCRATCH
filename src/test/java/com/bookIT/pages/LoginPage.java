@@ -10,14 +10,13 @@ public class LoginPage {
     @FindBy(name = "email")
     private WebElement username;
 
-    @FindBy(id = "password")
+    @FindBy(name = "password")
     private WebElement password;
 
     public void login(String usernameValue, String passwordValue) {
         username.sendKeys(usernameValue);
         password.sendKeys(passwordValue, Keys.ENTER);
-        BrowserUtils.waitForPageToLoad(10);
-        BrowserUtils.wait(3);
+        BrowserUtils.waitForPageToLoad(3);
     }
 
 }
